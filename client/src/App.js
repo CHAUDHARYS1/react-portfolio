@@ -3,13 +3,13 @@ import 'antd/dist/antd.css';
 import './App';
 
 
-import Header from "./components/header";
+import Navigation from "./components/menu";
 
 function App() {
   
   return (
     <div className="App">
-      <Header></Header>
+      <Navigation></Navigation>
     </div>
   );
 }
