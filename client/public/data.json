@@ -1,0 +1,59 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "name": "Book Lovers",
+      "description": "Book Lovers is an application that lets users search for a book based on author, title, subject, and genre.",
+      "github": "https://github.com/CHAUDHARYS1/book-lovers",
+      "live": "https://chaudharys1.github.io/book-lovers/",
+      "image": "https://static.wixstatic.com/media/abfe49_a21257cef0394d7f8e8403e293169440~mv2.png/v1/fill/w_1360,h_770,al_c,usm_0.66_1.00_0.01/Image-empty-state.png",
+      "langauge": "HTML, CSS, JAVASCRIPT, NODE, EXPRESS"
+    },
+    {
+      "id": 1,
+      "name": "Take My Recipe",
+      "description": "Take My Recipe is built entirely from JavaScript. Its purpose is to allow users to add recipe for others try out.",
+      "github": "https://github.com/CHAUDHARYS1/take-my-recipe",
+      "live": "https://take-my-recipe.herokuapp.com",
+      "image":"placeholder.png",
+      "langauge": "Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, uiKIT, JavaScript"
+
+    },
+    {
+      "id": 2,
+      "name": "Will I Need an Umbrella?",
+      "description": "Weather Application that shows users Temp, Wind, and Humidity based on user search. Users can search the desired city and 5-day forecast will be displayed. Great application to use to plan trips.",
+      "github": "https://github.com/CHAUDHARYS1/weather-app",
+      "live": "https://chaudharys1.github.io/weather-app/",
+      "image":"placeholder.png",
+      "langauge": "Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, uiKIT, JavaScript"
+    },
+    {
+      "id": 3,
+      "name": "Taskmaster Pro",
+      "description": "Taskmaster Pro is a new way to manage tasks seamlessly. Users simply add a task, edit the existing tasks by clicking on the task itself to edit. All the changes are saved even when the browser is closed.",
+      "github": "https://github.com/CHAUDHARYS1/taskmaster-pro",
+      "live": "https://chaudharys1.github.io/taskmaster-pro/",
+      "image":"placeholder.png",
+      "langauge": "Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, uiKIT, JavaScript"
+    },
+    {
+      "id": 4,
+      "name": "Team Profile Generator",
+      "description": "Command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.      ",
+      "github": "https://github.com/CHAUDHARYS1/team-profile-generator",
+      "live": "",
+      "image":"placeholder.png",
+      "langauge": "Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, uiKIT, JavaScript"
+    },
+    {
+      "id": 5,
+      "name": "Social Space Web",
+      "description": "Social Space Web is a marketing agency. My responsibility was to built a website that showcases who they are, services they provide, and how to contact them.",
+      "github": "https://github.com/CHAUDHARYS1/social-space-web",
+      "live": "http://www.socialspaceweb.com/index.php",
+      "image":"placeholder.png",
+      "langauge": "Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, uiKIT, JavaScript"
+    }
+  ]
+}

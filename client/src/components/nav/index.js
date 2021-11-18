@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { Menu, Image, Divider, Layout } from "antd";
+import { Menu, Divider, Layout } from "antd";
 
 import {
   SmileFilled,
-  
   ContactsFilled,
   ProjectFilled,
   LinkedinFilled,
@@ -26,7 +25,7 @@ const Nav = () => {
          
           <Divider />
 
-          <Image width={200} src="logo.png" />
+          <Link to="/"><img width={200} src="logo.png" /></Link>
           <Divider />
 
           <Menu.Item key="1" icon={<SmileFilled/>}>
