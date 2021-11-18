@@ -8,7 +8,7 @@ import { Layout } from "antd";
 import Nav from "./components/nav";
 import Footers from "./components/footer";
 import Home from "./pages/Home";
-import Resume from "./pages/Resume";
+// import Resume from "./pages/Resume";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 
@@ -24,7 +24,7 @@ function App() {
           <Layout className="margin-top-50 margin-left-50">
 
             <Route exact path="/"  component={Home} />
-            <Route exact path="/resume" component={Resume} />
+            {/* <Route exact path="/resume" component={Resume} /> */}
             <Route exact path="/project" component={Project} />
             <Route exact path="/contact" component={Contact} />
 

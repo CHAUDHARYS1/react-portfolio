@@ -8,6 +8,16 @@
 .contact-form{
   max-width: 400px;
 }
+
+.font-size-100{
+  font-size: 100px!important;
+}
+.margin-top-none{
+  margin-top: 0px!important;
+}
+.margin-bottom-none{
+  margin-bottom:0px!important;
+}
 /* COLORS */
 .bg-white{
   background-color: white;
@@ -24,4 +34,7 @@
 }
 .margin-top-100{
   margin-top: 100px;
+}
+.max-width-600{
+  max-width: 600px
 }

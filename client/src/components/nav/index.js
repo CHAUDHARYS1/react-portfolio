@@ -4,9 +4,12 @@ import { Link } from "react-router-dom";
 import { Menu, Image, Divider, Layout } from "antd";
 
 import {
-  PieChartOutlined,
-  DesktopOutlined,
-  ContainerOutlined,
+  SmileFilled,
+  
+  ContactsFilled,
+  ProjectFilled,
+  LinkedinFilled,
+  GithubFilled
 } from "@ant-design/icons";
 
 const {Sider} = Layout;
@@ -20,27 +23,32 @@ const Nav = () => {
           defaultOpenKeys={["sub1"]}
           mode="inline"
         >
-          <Image
-            width={250}
-            src="https://static.wixstatic.com/media/abfe49_245f6ae6b7d64678a3997111c9b7404c~mv2.jpeg/v1/crop/x_402,y_586,w_1987,h_1985/fill/w_452,h_452,al_c,q_80,usm_0.66_1.00_0.01/IMG_0097.jpeg"
-          />
+         
           <Divider />
 
           <Image width={200} src="logo.png" />
           <Divider />
 
-          <Menu.Item key="1" icon={<PieChartOutlined />}>
+          <Menu.Item key="1" icon={<SmileFilled/>}>
             <Link to="/">About me</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<DesktopOutlined />}>
+          {/* <Menu.Item key="2" icon={<ProfileFilled />}>
             <Link to="/resume">Resume</Link>
-          </Menu.Item>
-          <Menu.Item key="3" icon={<ContainerOutlined />}>
+          </Menu.Item> */}
+          <Menu.Item key="3" icon={<ProjectFilled />}>
             <Link to="/project">Projects</Link>
           </Menu.Item>
-          <Menu.Item key="4" icon={<ContainerOutlined />}>
+          <Menu.Item key="4" icon={<ContactsFilled />}>
             <Link to="/contact">Contact</Link>
           </Menu.Item>
+          <Divider />
+          <Menu.Item key="5" icon={<LinkedinFilled />}>
+            <a href="https://www.linkedin.com/in/stlchaudhary/" target='_blank'>LinkedIn</a>
+          </Menu.Item>
+          <Menu.Item key="6" icon={<GithubFilled />}>
+            <a href="https://github.com/CHAUDHARYS1" target='_blank'>Github</a>
+          </Menu.Item>
+          
         </Menu>
       </div>
     </Sider>
