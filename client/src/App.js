@@ -1,35 +1,41 @@
 // import logo from './logo.svg';
 import "antd/dist/antd.css";
 import "./App";
+import "./App.css"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Layout } from "antd";
 
 import Nav from "./components/nav";
+import Footers from "./components/footer";
 import Home from "./pages/Home";
+import Resume from "./pages/Resume";
+import Project from "./pages/Project";
+import Contact from "./pages/Contact";
+
+const { Header } = Layout;
 
 function App() {
   return (
-    <Layout>
-      <Router>
-        <Switch>
-        <div className="App">
-          <Nav />
-        </div>
-        </Switch>
-      </Router>
-      <Layout>
-        {/* Content goes below */}
-        <Router>
+    <Layout className="wrapper">
+         {/* Content goes below */}
+         <Router>
+        <Nav />
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/resume" exact component={Resume} />
-            <Route path="/project" exact component={Project} />
-            <Route path="/contact" exact component={Contact} />
-          </Switch>
-        </Router>
+          <Layout className="margin-top-50 margin-left-50">
+
+            <Route exact path="/"  component={Home} />
+            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/project" component={Project} />
+            <Route exact path="/contact" component={Contact} />
 
         {/* Footer goes here before the 2nd </Layout> */}
-      </Layout>
+        <Footers></Footers>
+        </Layout>
+
+          </Switch>
+        </Router>
+        
+        
     </Layout>
   );
 }
