@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Layout, Divider, Image } from "antd";
 const { Content } = Layout;
 
-const { Text, Title } = Typography;
+const { Title } = Typography;
 
 const Home = () => {
   return (

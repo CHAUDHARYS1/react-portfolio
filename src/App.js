@@ -14,7 +14,6 @@ import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 
-const { Header } = Layout;
 
 function App() {
   return (
@@ -27,8 +26,8 @@ function App() {
 
             <Route exact path="/"  component={Home} />
             {/* <Route exact path="/resume" component={Resume} /> */}
-            <Route exact path="/project" component={Project} />
-            <Route exact path="/contact" component={Contact} />
+            <Route path="/project" component={Project} />
+            <Route path="/contact" component={Contact} />
 
         {/* Footer goes here before the 2nd </Layout> */}
         <Footers></Footers>

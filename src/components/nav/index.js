@@ -25,7 +25,7 @@ const Nav = () => {
          
           <Divider />
 
-          <Link to="/"><img width={200} src="logo.png" /></Link>
+          <Link to="/"><img width={200} src="logo.png" alt="logo" /></Link>
           <Divider />
 
           <Menu.Item key="1" icon={<SmileFilled/>}>
@@ -42,10 +42,10 @@ const Nav = () => {
           </Menu.Item>
           <Divider />
           <Menu.Item key="5" icon={<LinkedinFilled />}>
-            <a href="https://www.linkedin.com/in/stlchaudhary/" target='_blank'>LinkedIn</a>
+            <a href="https://www.linkedin.com/in/stlchaudhary/" target='_blank' rel="noreferrer">LinkedIn</a>
           </Menu.Item>
           <Menu.Item key="6" icon={<GithubFilled />}>
-            <a href="https://github.com/CHAUDHARYS1" target='_blank'>Github</a>
+            <a href="https://github.com/CHAUDHARYS1" target='_blank' rel="noreferrer">Github</a>
           </Menu.Item>
           
         </Menu>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Layout, Typography, Card, Tag, Drawer, Tooltip, Button, Image, Popover } from "antd";
+import { Layout, Typography, Card, Tag, Tooltip, Button, Image, Popover } from "antd";
 import { GithubFilled, PlayCircleFilled, CodeFilled } from "@ant-design/icons";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -45,12 +45,12 @@ const Project = () => {
               <div key={project.id} >
                 <Title level={4}>{project.name}</Title>
                 <p key={1}>{project.description}</p>
-                <a href={project.github} target="_blank">
+                <a href={project.github} target="_blank" rel="noreferrer">
                     <Tooltip title="Github">
                       <Button shape="circle" icon={<GithubFilled />} />
                     </Tooltip>
                 </a>
-                <a href={project.live} target="_blank">
+                <a href={project.live} target="_blank" rel="noreferrer">
                     <Tooltip title="Live Application">
                       <Button shape="circle" icon={<PlayCircleFilled />} />
                     </Tooltip>
