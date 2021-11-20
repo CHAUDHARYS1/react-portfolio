@@ -6,7 +6,7 @@
       "description": "Book Lovers is an application that lets users search for a book based on author, title, subject, and genre.",
       "github": "https://github.com/CHAUDHARYS1/book-lovers",
       "live": "https://chaudharys1.github.io/book-lovers/",
-      "image": "https://static.wixstatic.com/media/abfe49_a21257cef0394d7f8e8403e293169440~mv2.png/v1/fill/w_1360,h_770,al_c,usm_0.66_1.00_0.01/Image-empty-state.png",
+      "image": "booklovers.png",
       "langauge": "HTML, CSS, JAVASCRIPT, NODE, EXPRESS"
     },
     {

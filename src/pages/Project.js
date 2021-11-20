@@ -3,7 +3,8 @@ import { Layout, Typography, Card, Tag, Tooltip, Button, Image, Popover } from "
 import { GithubFilled, PlayCircleFilled, CodeFilled } from "@ant-design/icons";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container"
+import Container from "react-bootstrap/Container";
+import Data from '../assets/data.json';
 const { Content } = Layout;
 const { Title } = Typography;
 
@@ -12,23 +13,30 @@ const Project = () => {
   const [data, setData] = useState([]);
 
   const getData = () => {
-    fetch("data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        console.log(response);
-        return response.json();
-      })
-      .then(function (myJson) {
-        console.log(myJson.projects);
-        setData(myJson.projects);
-      });
+    console.log(Data);
+    
+    // fetch("data.json", {
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //     Accept: "application/json",
+    //   },
+    // })
+    //   .then(function (response) {
+    //     console.log(response);
+    //     return response.json();
+    //   })
+    //   .then(function (myJson) {
+    //     console.log(myJson.projects);
+    //     setData(myJson.projects);
+    //   });
+
+
   };
   useEffect(() => {
-    getData();
+    
+    setData(Data.projects);
+    console.log(Data);
+    // getData();
   }, []);
 
 
@@ -38,9 +46,9 @@ const Project = () => {
       <Title level={2}>Project</Title>
       <Container>
       <Row>
-        {data.map((project) => (
+        {Data.projects.map((project) => (
           <Col style={{ marginBottom: 30}}>
-            <Card hoverable style={{ width: 300 }} cover={ <Image alt="example" src={project.image} fallback='placeholder.png' height='170px' />  } >
+            <Card hoverable style={{ width: 300 }} cover={ <Image alt="example" src={`${process.env.PUBLIC_URL}/${project.image}`}  fallback='placeholder.png' height='170px' />  } >
               {" "}
               <div key={project.id} >
                 <Title level={4}>{project.name}</Title>

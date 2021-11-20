@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Menu, Divider, Layout } from "antd";
-
 import {
   SmileFilled,
   ContactsFilled,
@@ -12,7 +11,7 @@ import {
 } from "@ant-design/icons";
 
 const {Sider} = Layout;
-
+// src={`${process.env.PUBLIC_URL}/images/transparentImages/${image}`}
 const Nav = () => {
   return (
     <Sider className="menu bg-white">
@@ -25,7 +24,7 @@ const Nav = () => {
          
           <Divider />
 
-          <Link to="/"><img width={200} src="logo.png" alt="logo" /></Link>
+          <Link to="/"><img width={200} src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" /></Link>
           <Divider />
 
           <Menu.Item key="1" icon={<SmileFilled/>}>
